@@ -33,15 +33,3 @@ public class SpamCheck {
         }
     }
 }
-
-
-/*
-ASSIGNMENT-3
-
-Explain file input stream, imput stream, buffer reader, input stream readern with its usage
-
-FileInputStream
-InputStream
-BufferStream
-InputStreamReader
-*/
