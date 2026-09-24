@@ -27,13 +27,6 @@ public class NetworkInterfaceExample {
 Program to list assigned IP addresses of network interface
 */
 
-/*
-Assignment1:
-Explain inet address. Why inet address is used in networking? List out different methods provided by java inet address class
-Assignemnt2:
-Explain network interface. Why network interface is used in networking? List out different methods provided by java network interface class
-*/
-
 
 
 
