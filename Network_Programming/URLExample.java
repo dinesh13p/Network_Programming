@@ -1,15 +1,25 @@
 import java.net.URL;
 
 public class URLExample {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL(
+                    "https://admin:password123@example.com/shop/products/item.html?category=electronics&id=9876");
+            System.out.println("Host: " + url.getHost());
+            System.out.println("Protocal: " + url.getProtocol());
+            System.out.println("Url: " + url.getUserInfo());
+            System.out.println("Port: " + url.getPort());
+            System.out.println("Authoruty: " + url.getAuthority());
+            System.out.println("Path: " + url.getPath());
+            System.out.println("Query: " + url.getQuery());
+            System.out.println("Reference: " + url.getRef());
+            System.out.println("File: " + url.getFile());
+            System.out.println("External Form: " + url.toExternalForm());
+            System.out.println("Default Port: " + url.getDefaultPort());
 
-        URL url = new URL("https://www.example.com:8080/index.html?id=10");
-
-        System.out.println("Protocol: " + url.getProtocol());
-        System.out.println("Host: " + url.getHost());
-        System.out.println("Port: " + url.getPort());
-        System.out.println("Path: " + url.getPath());
-        System.out.println("Query: " + url.getQuery());
-        System.out.println("Complete URL: " + url.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
 }
